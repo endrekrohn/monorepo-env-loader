@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    // See https://github.com/microsoft/vscode-icons#icons
+    // for the icons
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Initialize environments variables",
+            "type": "shell",
+            "command": "sudo ./.devcontainer/.venv/bin/python3.10 ./.devcontainer/scripts/load_envs.py env.toml",
+            "icon": {
+                "id": "key",
+                "color": "terminal.ansiWhite"
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false,
+                "close": false
+            },
+            "problemMatcher": []
+        },
+    ]
+}
