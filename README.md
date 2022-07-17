@@ -37,3 +37,11 @@ To ease the process of onboarding new developers (reducing the number of `.env`-
       [web.services.other-app.".env"] 
         AREA_52="tonopah-test-range"
 ```
+****
+## Demonstration
+
+Below is demonstration of loading `.env`-files upon creating a `devcontainer`.
+
+![Demonstration of loading env-files][env-loader-demo]
+
+[env-loader-demo]: https://github.com/endrekrohn/monorepo-env-loader/blob/assets/env-loader.gif
